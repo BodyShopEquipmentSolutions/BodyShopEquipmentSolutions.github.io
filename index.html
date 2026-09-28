@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Body Shop Equipment Solutions LLC | Collision Repair Equipment, Texas</title>
+<meta name="description" content="Body Shop Equipment Solutions LLC sells, delivers, and installs collision repair shop equipment and furniture for businesses across Texas.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#16202a; --ink-2:#3b4855; --muted:#66727e; --line:#dfe5ea;
+  --paper:#f6f8fa; --white:#fff; --steel:#2f6f9f; --steel-d:#1f5178; --steel-l:#e8f1f8;
+  --radius:10px; --max:1120px;
+  --fs-xs:.8125rem; --fs-sm:.9375rem; --fs-base:1rem; --fs-lg:1.25rem; --fs-xl:clamp(1.6rem,1.1rem + 1.6vw,2.25rem); --fs-hero:clamp(2.2rem,1.2rem + 4vw,4rem);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;font-size:var(--fs-base);line-height:1.6;color:var(--ink);background:var(--white);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Archivo,Inter,sans-serif;line-height:1.1;letter-spacing:-.01em}
+a{color:var(--steel)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+/* header */
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brand svg{width:34px;height:34px;color:var(--steel)}
+.brand span{font-family:Archivo;font-weight:700;font-size:1.02rem;line-height:1.05}
+.brand small{display:block;font-family:Inter;font-weight:500;font-size:.72rem;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+nav ul{display:flex;gap:26px;list-style:none}
+nav a{color:var(--ink-2);text-decoration:none;font-size:var(--fs-sm);font-weight:500}
+nav a:hover{color:var(--steel)}
+.btn{display:inline-block;background:var(--steel);color:#fff;text-decoration:none;font-weight:600;font-size:var(--fs-sm);padding:12px 20px;border-radius:8px;transition:background .2s}
+.btn:hover{background:var(--steel-d)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.btn.ghost:hover{border-color:var(--steel);color:var(--steel)}
+/* hero */
+.hero{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.hero .wrap{padding-top:96px;padding-bottom:96px;display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center}
+.eyebrow{font-size:var(--fs-xs);letter-spacing:.14em;text-transform:uppercase;color:#9cc3e0;font-weight:600;margin-bottom:18px}
+.hero h1{font-size:var(--fs-hero);font-weight:800;margin-bottom:22px}
+.hero p{color:#c6d0d9;font-size:1.0625rem;max-width:52ch;margin-bottom:32px}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
+.hero .btn.ghost{color:#fff;border-color:#3f4f5e}
+.hero .btn.ghost:hover{border-color:#9cc3e0;color:#9cc3e0}
+.hero-art{position:relative}
+.hero-art svg{width:100%;height:auto;display:block}
+/* sections */
+section{padding:88px 0}
+.sec-head{max-width:640px;margin-bottom:48px}
+.sec-head h2{font-size:var(--fs-xl);font-weight:700;margin-bottom:12px}
+.sec-head p{color:var(--ink-2)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:28px}
+.card .ic{width:40px;height:40px;border-radius:8px;background:var(--steel-l);color:var(--steel);display:grid;place-items:center;margin-bottom:18px}
+.card .ic svg{width:22px;height:22px}
+.card h3{font-size:var(--fs-lg);font-weight:700;margin-bottom:8px}
+.card p{color:var(--ink-2);font-size:var(--fs-sm)}
+.alt{background:var(--paper)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s}
+.step{border-top:3px solid var(--steel);padding-top:18px}
+.step::before{counter-increment:s;content:"0" counter(s);font-family:Archivo;font-weight:800;color:var(--steel);font-size:.95rem;display:block;margin-bottom:8px}
+.step h3{font-size:1.05rem;margin-bottom:6px}
+.step p{font-size:var(--fs-sm);color:var(--ink-2)}
+.pay{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.pay ul{list-style:none;display:grid;gap:12px}
+.pay li{display:flex;gap:12px;align-items:flex-start;font-size:var(--fs-sm);color:var(--ink-2)}
+.pay li svg{flex:none;width:20px;height:20px;color:var(--steel);margin-top:2px}
+.policy{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.policy .card h3{font-size:1.05rem}
+.policy .card p+p{margin-top:10px}
+.contact{background:var(--ink);color:#fff}
+.contact .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center}
+.contact h2{font-size:var(--fs-xl);margin-bottom:12px}
+.contact p{color:#c6d0d9}
+.cbox{background:#1f2c38;border:1px solid #2e3d4b;border-radius:var(--radius);padding:28px;display:grid;gap:16px}
+.cbox div{font-size:var(--fs-sm)}
+.cbox small{display:block;color:#8fa0af;font-size:var(--fs-xs);text-transform:uppercase;letter-spacing:.1em;margin-bottom:2px}
+.cbox a{color:#fff;text-decoration:none;font-weight:600;font-size:1.05rem}
+.cbox a:hover{color:#9cc3e0}
+footer{background:#0f171e;color:#8fa0af;font-size:var(--fs-xs);padding:28px 0}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:#8fa0af}
+@media (max-width:900px){
+  nav ul{display:none}
+  .hero .wrap,.pay,.contact .wrap{grid-template-columns:1fr}
+  .hero-art{max-width:420px}
+  .grid{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .policy{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .grid,.steps{grid-template-columns:1fr}
+  section{padding:64px 0}
+  .hero .wrap{padding-top:64px;padding-bottom:64px}
+  .nav .btn{display:none}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Body Shop Equipment Solutions home">
+      <svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect x="2" y="2" width="36" height="36" rx="8" stroke="currentColor" stroke-width="3"/><path d="M9 25h22M12 25l3-8h10l3 8" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><circle cx="14" cy="29" r="2.4" fill="currentColor"/><circle cx="26" cy="29" r="2.4" fill="currentColor"/><path d="M20 8v6M17 11h6" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
+      <span>Body Shop Equipment Solutions<small>Collision repair equipment · Texas</small></span>
+    </a>
+    <nav aria-label="Primary"><ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#process">How it works</a></li>
+      <li><a href="#payment">Payment</a></li>
+      <li><a href="#policies">Policies</a></li>
+    </ul></nav>
+    <a class="btn" href="#contact">Request a quote</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Serving collision repair shops across Texas</p>
+      <h1>The right equipment for a certified collision shop.</h1>
+      <p>Body Shop Equipment Solutions LLC sells, delivers, and installs collision repair shop equipment and furniture for businesses. We quote each project from the shop's needs and OEM certification requirements, then handle ordering, delivery, and setup.</p>
+      <div class="ctas"><a class="btn" href="#contact">Request a quote</a><a class="btn ghost" href="#services">What we provide</a></div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 420 320" fill="none">
+        <rect x="0" y="0" width="420" height="320" rx="14" fill="#1f2c38"/>
+        <g stroke="#2e3d4b" stroke-width="1">
+          <path d="M0 64h420M0 128h420M0 192h420M0 256h420M84 0v320M168 0v320M252 0v320M336 0v320"/>
+        </g>
+        <!-- bench -->
+        <rect x="52" y="214" width="316" height="18" rx="3" fill="#2f6f9f"/>
+        <rect x="80" y="232" width="14" height="44" fill="#4f90bb"/><rect x="326" y="232" width="14" height="44" fill="#4f90bb"/>
+        <rect x="64" y="276" width="292" height="10" rx="2" fill="#3b4855"/>
+        <!-- car outline -->
+        <path d="M86 206c0-14 10-22 26-26l40-10 34-30c8-6 16-8 28-8h58c12 0 20 4 28 12l26 28 30 6c14 3 22 12 22 26v2H86z" stroke="#9cc3e0" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M168 170l22-20c4-3 8-4 14-4h26v24zM244 146h20c6 0 10 2 14 6l18 18h-52z" stroke="#9cc3e0" stroke-width="2.5" stroke-linejoin="round"/>
+        <circle cx="146" cy="206" r="20" fill="#1f2c38" stroke="#9cc3e0" stroke-width="3"/>
+        <circle cx="294" cy="206" r="20" fill="#1f2c38" stroke="#9cc3e0" stroke-width="3"/>
+        <!-- measuring points -->
+        <g fill="#f6f8fa"><circle cx="110" cy="214" r="4"/><circle cx="190" cy="214" r="4"/><circle cx="250" cy="214" r="4"/><circle cx="330" cy="214" r="4"/></g>
+        <path d="M110 214V60M330 214V60" stroke="#4f90bb" stroke-width="1.5" stroke-dasharray="4 5"/>
+        <path d="M110 60h220" stroke="#4f90bb" stroke-width="1.5"/>
+        <text x="220" y="52" fill="#9cc3e0" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" letter-spacing="1.5">MEASURED · SET UP · CERTIFIED</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>What we provide</h2>
+      <p>Equipment and furnishings for professional collision repair facilities, sold to businesses and quoted per project.</p>
+    </div>
+    <div class="grid">
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17h18M5 17l2-6h10l2 6M8 21v-4M16 21v-4"/></svg></div><h3>Frame &amp; measuring systems</h3><p>Frame benches, straightening systems, and electronic measuring for structural repair.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20l6-6M14 4l6 6-8 8-6-6z"/></svg></div><h3>Welding &amp; repair tools</h3><p>Resistance spot welders, MIG welders, and specialty tooling required by OEM repair procedures.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 4v16"/></svg></div><h3>OEM certification packages</h3><p>Equipment lists built from a shop's current inventory against the OEM program's tooling requirements.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 20V10h12v10M4 10l8-6 8 6"/></svg></div><h3>Shop furniture &amp; seating</h3><p>Technician seating, workstations, and shop furnishings for production and office areas.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h13v10H3zM16 10h3l2 3v4h-5"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg></div><h3>Delivery &amp; installation</h3><p>Coordinated delivery, assembly, and installation at the customer's facility.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg></div><h3>Service coordination</h3><p>Help scheduling service and repairs on equipment we've supplied.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="process" class="alt">
+  <div class="wrap">
+    <div class="sec-head"><h2>How ordering works</h2><p>Every order starts with a written quote. Nothing is charged until the customer approves it.</p></div>
+    <div class="steps">
+      <div class="step"><h3>Review</h3><p>We review the shop's needs, existing equipment, and any OEM certification requirements.</p></div>
+      <div class="step"><h3>Quote</h3><p>A written estimate lists each item, quantity, price, installation, and applicable Texas sales tax.</p></div>
+      <div class="step"><h3>Approve &amp; order</h3><p>Once the customer approves the estimate or issues a purchase order, we place the order.</p></div>
+      <div class="step"><h3>Deliver &amp; invoice</h3><p>Equipment is delivered and installed, and a final invoice is issued with payment options.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="payment">
+  <div class="wrap pay">
+    <div class="sec-head" style="margin-bottom:0">
+      <h2>Payment</h2>
+      <p>Invoices are payable in U.S. dollars. Standard terms are Net 30 unless the quote states otherwise.</p>
+    </div>
+    <ul>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5 9-10"/></svg>Credit and debit card through a secure payment link included with the invoice.</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5 9-10"/></svg>Business check payable to Body Shop Equipment Solutions LLC.</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5 9-10"/></svg>ACH bank transfer on request.</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5 9-10"/></svg>Texas sales tax is charged on taxable items unless the customer provides a valid exemption certificate.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="policies" class="alt">
+  <div class="wrap">
+    <div class="sec-head"><h2>Policies</h2><p>These policies apply to all quotes, orders, and invoices unless a signed quote or purchase order states different terms.</p></div>
+    <div class="policy">
+      <div class="card"><h3>Cancellations</h3><p>Orders may be cancelled at no charge before the equipment is ordered from the manufacturer. After that, cancellation is subject to any restocking or freight charges passed through by the manufacturer. Special-order and custom-configured items may not be cancellable once ordered.</p></div>
+      <div class="card"><h3>Returns &amp; refunds</h3><p>Items that arrive damaged or do not match the approved quote will be repaired, replaced, or refunded. Please report issues within 7 days of delivery. Returns of correctly delivered stock items are accepted within 30 days in new, unused condition and may be subject to the manufacturer's restocking fee. Refunds are issued to the original payment method, usually within 5–10 business days after approval.</p></div>
+      <div class="card"><h3>Delivery &amp; installation</h3><p>Equipment is delivered to the customer's business address in Texas. Lead times depend on the manufacturer and are provided with each quote. Installation or assembly is performed when listed on the quote. Title and risk pass to the customer at delivery.</p></div>
+      <div class="card"><h3>Warranty</h3><p>Equipment is covered by the manufacturer's warranty. We help customers submit and coordinate warranty claims with the manufacturer.</p></div>
+      <div class="card"><h3>Disputes</h3><p>If you have a question about a charge, contact us first at the email or phone below and we will work to resolve it within 5 business days.</p></div>
+      <div class="card"><h3>Privacy</h3><p>We collect only the contact, billing, and shipping information needed to quote, deliver, and invoice orders. We never sell customer information. Card payments are processed by our payment provider; we do not store full card numbers.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div>
+      <h2>Request a quote or ask a question</h2>
+      <p>Tell us about your shop and the equipment you need. We usually respond within one business day.</p>
+    </div>
+    <div class="cbox">
+      <div><small>Email</small><a href="mailto:bodyshop.e.s@gmail.com">bodyshop.e.s@gmail.com</a></div>
+      <div><small>Phone</small><a href="tel:+12103255823">(210) 325-5823</a></div>
+      <div><small>Location</small><span>Helotes, Texas · Serving businesses statewide</span></div>
+      <div><small>Hours</small><span>Monday–Friday, 8:00 AM–5:00 PM Central</span></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Body Shop Equipment Solutions LLC. All rights reserved.</span>
+    <span>Helotes, TX · <a href="mailto:bodyshop.e.s@gmail.com">bodyshop.e.s@gmail.com</a> · <a href="#policies">Policies</a></span>
+  </div>
+</footer>
+</body>
+</html>

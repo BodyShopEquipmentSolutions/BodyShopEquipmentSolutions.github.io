@@ -83,6 +83,20 @@ section{padding:88px 0}
 footer{background:#0f171e;color:#8fa0af;font-size:var(--fs-xs);padding:28px 0}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 footer a{color:#8fa0af}
+
+.cat{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pcard{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px 26px}
+.pcard .tag{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--steel);background:var(--steel-l);border-radius:4px;padding:3px 8px;margin-bottom:12px}
+.pcard h3{font-size:1.1rem;margin-bottom:12px}
+.pcard ul{list-style:none;display:grid;gap:9px}
+.pcard li{font-size:var(--fs-sm);color:var(--ink-2);padding-left:14px;position:relative;line-height:1.45}
+.pcard li::before{content:"";position:absolute;left:0;top:.6em;width:6px;height:2px;background:var(--steel)}
+.pcard li b{color:var(--ink);font-weight:600}
+.brandrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.brandrow span{font-size:var(--fs-xs);font-weight:600;border:1px solid var(--line);border-radius:999px;padding:5px 12px;color:var(--ink-2);background:#fff}
+.note{margin-top:28px;font-size:var(--fs-xs);color:var(--muted);max-width:760px}
+@media (max-width:900px){.cat{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.cat{grid-template-columns:1fr}}
 @media (max-width:900px){
   nav ul{display:none}
   .hero .wrap,.pay,.contact .wrap{grid-template-columns:1fr}
@@ -107,6 +121,7 @@ footer a{color:#8fa0af}
       <span>Body Shop Equipment Solutions<small>Collision repair equipment · Texas</small></span>
     </a>
     <nav aria-label="Primary"><ul>
+      <li><a href="#products">Products</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#process">How it works</a></li>
       <li><a href="#payment">Payment</a></li>
@@ -123,7 +138,7 @@ footer a{color:#8fa0af}
       <p class="eyebrow">Serving collision repair shops across Texas</p>
       <h1>The right equipment for a certified collision shop.</h1>
       <p>Body Shop Equipment Solutions LLC sells, delivers, and installs collision repair shop equipment and furniture for businesses. We quote each project from the shop's needs and OEM certification requirements, then handle ordering, delivery, and setup.</p>
-      <div class="ctas"><a class="btn" href="#contact">Request a quote</a><a class="btn ghost" href="#services">What we provide</a></div>
+      <div class="ctas"><a class="btn" href="#contact">Request a quote</a><a class="btn ghost" href="#products">View products</a></div>
     </div>
     <div class="hero-art" aria-hidden="true">
       <svg viewBox="0 0 420 320" fill="none">
@@ -150,10 +165,24 @@ footer a{color:#8fa0af}
   </div>
 </section>
 
+<section id="products" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Products</h2>
+      <p>Collision repair equipment and shop furnishings we quote, deliver, and install. Pricing depends on configuration and OEM program, so every item is priced on a written quote.</p>
+      <div class="brandrow"><span>Car-O-Liner®</span><span>Vyper Industrial</span><span>Pre-owned equipment</span></div>
+    </div>
+    <div class="cat">
+      <div class="pcard"><span class="tag">Car-O-Liner®</span><h3>Frame benches &amp; alignment</h3><ul><li><b>BenchRack™</b> drive-on frame bench with hydraulic lift, 10-ton pulling</li><li><b>BenchRack™ Versa</b> frame bench</li><li><b>SPEED™ 3T / 3T Plus</b> benches</li><li><b>QUICK42™</b> alignment bench</li><li>Drawaligner pulling towers</li></ul></div><div class="pcard"><span class="tag">Car-O-Liner®</span><h3>Anchoring, holding &amp; fixtures</h3><ul><li><b>EVO™ 1, 2 &amp; 3</b> OEM-approved anchoring and holding systems</li><li>OEM fixture and jig kits for certification programs</li><li><b>B731</b> truck clamping system</li><li>Tool boards sized for EVO and fixture storage</li></ul></div><div class="pcard"><span class="tag">Car-O-Liner®</span><h3>Measuring systems</h3><ul><li><b>Car-O-Tronic® Vision2 X3</b> electronic 3D measuring</li><li><b>POINTX® II</b> diagnostic measuring tool</li><li><b>CAR-O-DATA®</b> vehicle dimension database</li><li><b>Vision2™</b> measuring software</li></ul></div><div class="pcard"><span class="tag">Car-O-Liner®</span><h3>Spot welders &amp; spotters</h3><ul><li><b>CTR®9</b> inverter resistance spot welder</li><li><b>CR™200</b> and <b>CR™235</b> spotters</li><li><b>CR™35</b> spotter</li><li>Aluminum spotter</li></ul></div><div class="pcard"><span class="tag">Car-O-Liner®</span><h3>MIG welders, heating &amp; riveting</h3><ul><li><b>CMI™300 Pulse</b> MIG/MAG welder</li><li><b>CMI™ &amp; CMI™ Twin</b> MIG/MAG welders</li><li><b>CMI™161</b> MIG welder</li><li><b>H4PRO</b>, <b>CH™37</b> and <b>CH™100</b> induction heaters</li><li><b>PNP90 / PNP90 XT²</b> riveting system and <b>CBR™2000</b> riveting tool</li></ul></div><div class="pcard"><span class="tag">Car-O-Liner®</span><h3>Lifts, ADAS &amp; workshop</h3><ul><li><b>MTF 3000C / 3500C / 4000C</b> two-post lifts</li><li><b>CDS™35</b> double scissor lift</li><li><b>BT 1800</b> mobile lift table</li><li><b>EZ-ADAS</b> recalibration system</li><li><b>CDR™1</b> and <b>CR™200</b> dent-pulling workstations</li><li>Tool boards, wall systems, wagons, cabinets and estimation bays</li></ul></div><div class="pcard"><span class="tag">Vyper Industrial</span><h3>Shop seating</h3><ul><li><b>Robust Steel Sport</b> mechanic's chair with backrest</li><li><b>Robust Steel Max</b> adjustable chair for bench height</li><li><b>Elevated Steel Max</b> chair for tall benches and weld tables</li><li><b>Robust Steel Pro</b> and <b>Low Pro</b> stools</li><li>Ford® Signature Collection seating</li></ul></div><div class="pcard"><span class="tag">Vyper Industrial</span><h3>Creepers, carts &amp; add-ons</h3><ul><li><b>Mini</b>, <b>Lay-Down</b> and <b>Foldable</b> creepers</li><li><b>X32 Series</b> tool cart</li><li><b>Vyper Turbo Fan 24"</b></li><li>Big Boy seat, adjustable armrest and backrest upgrades</li></ul></div><div class="pcard"><span class="tag">Pre-owned</span><h3>Used equipment</h3><ul><li>Inspected pre-owned frame machines, pullers and welders when available</li><li>Each item is described as used equipment, with its condition stated on the quote</li><li>Ask about current availability</li></ul></div>
+    </div>
+    <p class="note">Car-O-Liner equipment is supplied in partnership with Car-O-Liner Southwest. Product names and trademarks belong to their respective owners. Specifications and availability are confirmed on each quote.</p>
+  </div>
+</section>
+
 <section id="services">
   <div class="wrap">
     <div class="sec-head">
-      <h2>What we provide</h2>
+      <h2>Services</h2>
       <p>Equipment and furnishings for professional collision repair facilities, sold to businesses and quoted per project.</p>
     </div>
     <div class="grid">
